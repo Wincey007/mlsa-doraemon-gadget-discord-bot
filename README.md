@@ -1,14 +1,17 @@
 # Doraemon's gadget Discord bot
 
-This bot can tell you informations about Doraemon's gadget in Thai language. The information used in this bot is referenced from [Doraemon Thai Wiki](https://doraemon.fandom.com/th/wiki/หมวดหมู่:ของวิเศษ).
+This bot can tell you information about Doraemon's gadget in the Thai language. The information used in this bot is referenced from [Doraemon Thai Wiki](https://doraemon.fandom.com/th/wiki/หมวดหมู่:ของวิเศษ).
 
 # How to use
-1. type ```!gadgets``` in Discord text channel to see a list of gadgets
-2. type ```!gadget's name``` in Discord text channel to the see informations of this gadget.
+1. Type ```!gadgets``` in the Discord text channel to see a list of gadgets
+<img src='https://github.com/5hyfilm/mlsa-doraemon-gadget-discord-bot/blob/main/img/htu1.png?raw=true'>
+2. Type ```!gadget's name``` in Discord text channel to see the information about this gadget.
+<img src='https://github.com/5hyfilm/mlsa-doraemon-gadget-discord-bot/blob/main/img/htu2.png?raw=true'>
 
 # Run the project
-This project is already setup an environment.
+This project is already setup an environment, so you can run it using this command.
 ```sh 
+$ source venv/bin/activate
 $ python3 bot.py
 ```
 

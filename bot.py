@@ -3,7 +3,7 @@ from discord import Embed, File
 from datetime import datetime
 
 client = discord.Client()
-bot_token = 
+bot_token = ''
 
 @client.event
 async def on_ready( ):
@@ -11,7 +11,6 @@ async def on_ready( ):
 
 @client.event
 async def on_message(message):
-
     if message.content == 'Hi Doraemon':
         await message.channel.send('สวัสดีท่านสมาชิก')
 
@@ -22,7 +21,7 @@ async def on_message(message):
                   ('CREDIT', 'https://doraemon.fandom.com/th/wiki/ประตูไปที่ไหนก็ได้', False)]
         for name, value, inline in fields:
             embed.add_field(name=name, value=value, inline=False)
-        embed.set_image(url='https://github.com/5hyfilm/mlsa-toystory-discord-bot/blob/main/img/woody.jpeg?raw=true')
+        embed.set_image(url='https://raw.githubusercontent.com/5hyfilm/mlsa-doraemon-gadget-discord-bot/main/img/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%95%E0%B8%B9%E0%B9%84%E0%B8%9B%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%99%E0%B8%81%E0%B9%87%E0%B9%84%E0%B8%94%E0%B9%89.jpeg')
         await message.channel.send(embed=embed)
 
-client.run(token)
+client.run(bot_token)

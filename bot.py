@@ -12,8 +12,8 @@ async def on_ready( ):
 @client.event
 async def on_message(message):
 
-    if message.content == 'Hi bot':
-        await message.channel.send('Greetings sir!')
+    if message.content == 'Hi Doraemon':
+        await message.channel.send('สวัสดีท่านสมาชิก')
 
     if message.content == 'ประตูไปที่ไหนก็ได้':
         embed = Embed(title='ประตูไปที่ไหนก็ได้', description='どこでもドア', color=0xFF0000, timestamp=datetime.utcnow())

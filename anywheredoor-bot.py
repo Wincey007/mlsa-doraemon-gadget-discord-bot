@@ -3,7 +3,7 @@ from discord import Embed, File
 from datetime import datetime
 
 client = discord.Client()
-bot_token = ''
+bot_token = 'TOKEN HERE'
 
 @client.event
 async def on_ready( ):

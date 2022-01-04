@@ -5,7 +5,8 @@ This bot can tell you information about Doraemon's gadget in the Thai language. 
 # How to use
 1. Type ```!gadgets``` in the Discord text channel to see a list of gadgets
 <img src='https://github.com/5hyfilm/mlsa-doraemon-gadget-discord-bot/blob/main/img/htu1.png?raw=true'>
-2. Type ```!gadget's name``` in Discord text channel to see the information about this gadget.
+
+2. Type ```!gadget's name``` in the Discord text channel to see the information about this gadget.
 <img src='https://github.com/5hyfilm/mlsa-doraemon-gadget-discord-bot/blob/main/img/htu2.png?raw=true'>
 
 # Run the project

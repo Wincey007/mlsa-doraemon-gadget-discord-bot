@@ -3,7 +3,7 @@ from discord import Embed, File
 from datetime import datetime
 
 client = discord.Client()
-bot_token = 'TOKEN HERE'
+bot_token = 'OTI3NjAxMzg0NjI5NjI4OTYw.YdMmHA.MwYULpXtAVi67ragpkmssz4BRKg'
 
 gadgets = {'!ขนมปังช่วยจำ': ['アンキパン', 'เป็นของวิเศษของโดราเอมอน เป็นของวิเศษที่เมื่อนำขนมปังแปะบนหนังสือและกินเข้าไป ก็จะจำเรื่องที่แปะในหนังสือได้ เป็นของวิเศษประเภทอาหาร ปรากฏครั้งแรกในตอนขนมปังช่วยจำเล่มที่ 2', 'เพียงนำขนมปังไปแปะบนหนังสือหน้าที่ต้องการจะจำและกินเข้าไปก็จะจำสิ่งแปะบนหน้านั้นๆได้ แต่ถ้าถ่ายออกสิ่งที่กินเข้าไปเพื่อจำนั้นก็จะหายไปหมด', 'https://doraemon.fandom.com/th/wiki/ขนมปังช่วยจำ', 'https://github.com/5hyfilm/mlsa-doraemon-gadget-discord-bot/blob/main/img/%E0%B8%82%E0%B8%99%E0%B8%A1%E0%B8%9B%E0%B8%B1%E0%B8%87%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B8%88%E0%B8%B3.png?raw=true'],
            '!คอปเตอร์ไม้ไผ่': ['タケコプター', 'ประวัติของคอปเตอร์ไม้ไผ่แสดงได้ให้เห็นในตอน โนบิตะล่าโจรปริศนาในพิพิธภัณฑ์ของวิเศษ โดยเล่าว่าคอปเตอร์ไม้ไผ่รุ่นแรกมีขนาดใหญ่มาก เป็นการผสมผสานกันระหว่างใบพัดของเฮลิคอปเตอร์และเครื่องยนต์ขนาดกลาง ในรุ่นแรกจะใช้สวมทั้งตัวและมีสามใบพัด ใบพัดเล็กอีกสอง และใบพัดใหญ่หนึ่งอัน และต่อๆมาก็มีขนาดเริ่มเล็กลงเรื่อยๆ จนมาถึงรุ่นที่สี่ จะเป็นแบบหมวกมีใบพัดติดที่หัว และพัฒนาเรื่อยมาจนมาเป็นคอปเตอร์ไม้ไผ่ในปัจจุบันที่มีขนาดเล็กกระทัดรัดพกพาง่าย', 'เพียงแค่กดปุ่มที่ฐานของคอปเตอร์ไม้ไผ่ ก็จะสามารถบินได้อย่างอิสระ โดยการเคลื่อนที่บินไปมาว่าจะเลี้ยวไปทางไหน ผู้ใช้จะต้องคิดว่าจะเลี้ยวซ้าย เลี้ยวขวา หรือตรงไป เมื่อคิดแล้วมันก็จะพาเลี้ยวไปยังอัตโนมัติ', 'https://doraemon.fandom.com/th/wiki/คอปเตอร์ไม้ไผ่', 'https://github.com/5hyfilm/mlsa-doraemon-gadget-discord-bot/blob/main/img/%E0%B8%84%E0%B8%AD%E0%B8%9B%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%84%E0%B8%9C%E0%B9%88.jpeg?raw=true'],
@@ -26,7 +26,7 @@ async def on_message(message):
         embed = Embed(title="Doraemon's Gadget lists", description='รายชื่อของวิเศษของโดราเอม่อนทั้งหมด', color=0xFF0000, timestamp=datetime.utcnow())
         gadgets_lst = []
         for gadget in gadgets:
-            gadgets_lst.append((gadget, gadgets[gadget][0], False))
+            gadgets_lst.append((gadget[1:], gadgets[gadget][0], False))
         for name, value, inline in gadgets_lst:
             embed.add_field(name=name, value=value, inline=False)
         await message.channel.send(embed=embed)

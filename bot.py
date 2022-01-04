@@ -24,7 +24,7 @@ async def on_message(message):
         for name, value, inline in fields:
             embed.add_field(name=name, value=value, inline=True)
         embed.set_author(name='BOT')
-        embed.set_image(file=File('img/woody.jpeg'))
+        embed.set_image(url='https://github.com/5hyfilm/mlsa-toystory-discord-bot/blob/main/img/woody.jpeg')
         await message.channel.send(embed=embed)
 
 
@@ -35,4 +35,4 @@ async def on_message(message):
 
     # await message.channel.send('Sawasdee')
 
-client.run('OTI3NjAxMzg0NjI5NjI4OTYw.YdMmHA.1PZcvKmzXOntEuOIYwJjZXgkiTw')
+# client.run('OTI3NjAxMzg0NjI5NjI4OTYw.YdMmHA.1PZcvKmzXOntEuOIYwJjZXgkiTw')

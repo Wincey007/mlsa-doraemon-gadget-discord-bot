@@ -7,7 +7,8 @@ bot_token = 'TOKEN HERE'
 
 @client.event
 async def on_ready( ):
-    print('bot is ready to use')
+    print("Doraemon's Gadgets bot is ready to use")
+    await client.change_presence(status=discord.Status.online, activity=discord.Game('อั๊ง อัง อัง'))
 
 @client.event
 async def on_message(message):

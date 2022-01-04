@@ -15,6 +15,7 @@ gadgets = {'ขนมปังช่วยจำ': ['アンキパン', 'เป�
 @client.event
 async def on_ready( ):
     print("Doraemon's Gadgets bot is ready to use")
+    await client.change_presence(status=discord.Status.online, activity=discord.Game('!gadgets'))
 
 @client.event
 async def on_message(message):

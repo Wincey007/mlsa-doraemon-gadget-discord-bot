@@ -13,7 +13,7 @@ This bot can tell you information about Doraemon's gadget in the Thai language. 
 This project is already setup an environment, so you can run it using this command.
 ```sh 
 $ source venv/bin/activate
-$ python3 app.py
+$ python3 bot.py
 ```
 
 # References
